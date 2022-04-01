@@ -1,0 +1,790 @@
+
+#wrapper {
+	width: 1024px;					/*  размеры всего шаблона (ширина)	 */
+	height: 1800px;					/*  размеры всего шаблона (высота)	 */
+	margin: 0 auto;					/* 	отступ если вместо ноля 10 то отступ слева будет 10px  */
+	outline: 1px solid #cccccc;		/*  рамка для всего шаблона	         */
+}
+
+
+#TopLine {
+	height: 18px;
+	background-image: url(images/TopLine.png);		/* 	путь к картинке */
+	background-repeat: repeat-x;				/* тиражирование картинки так как это линия и вырезана только ее часть 	 */
+	background-color: #4169E1;			/* 	если в браузере отключены картинки то у пользователя вместо нее будет синяя линия */
+}
+
+/*	НАЧАЛО БЛОКА HEADER  */
+
+
+#header {
+	height: 157px;
+	outline: 0px solid #cc0000;
+	position: relative;
+}
+
+
+#logo {
+	width: 233px;		/* 	размер блока  */
+	height: 94px;		/* 	размер блока  */
+	outline: 0px solid #cccccc;				/* 	рамка  */
+	background-image: url(images/logo.png);		/* 	путь  */
+	background-repeat: no-repeat;				
+	position: absolute;
+	left: 54px;			/* 	отступ блока слева  */
+	top: 29px;			/* 	отступ блока сверху  */
+}
+
+
+#logo a {
+	display: block;		/* 	ссылка лого  */
+	height:  92px;
+	cursor: pointer;
+}
+
+
+#faq {
+	width: 84px;							/* 	размер блока  */
+	height: 173px;							/* размер блока	 */	
+	outline: 0px solid #cccccc;				/* рамка	 */
+	background-image: url(images/faq.png);	/*  путь	*/
+	background-repeat: no-repeat;			/* тиражировать не надо	 */
+	position: absolute;
+	right: 43px;
+	top: -18px;								/* 	так как картинка FAQ заходит на другой блок который находится выше её то задаём значение со знаком - */
+}
+
+
+#faq a {
+	display: block;		/* делаем ссылку на картинке FAQ	 */
+	height:  164px;
+	cursor: pointer;
+}
+
+
+#nav {
+	width: 520px;				/* 	размер блока  */
+	height: 30px;				/* 	размер блока  */
+	outline: 0px solid #cccccc;
+	position: absolute;
+	top: 56px;
+	left: 333px;
+}
+
+
+#nav li {
+	float: left;
+	outline: 0px solid #cc0000;
+	margin-right: 27px;
+}
+
+
+#nav li a {
+	text-decoration: none;
+	font: 16px Arial sans-serif;
+	color: #3f3f3f;
+}
+
+
+#nav li a.active {
+color: #2c789c;
+}
+
+
+#nav li a.active, #nav li a:hover {
+	color: #2c789c;
+}
+
+
+/*	КОНЕЦ БЛОКА HEADER  */
+
+
+/*	НАЧАЛО БЛОКА people */
+
+
+#people {
+	height: 404px;
+	outline: 1px solid #000000;
+	background-image: url(images/peopleBg.jpg);   /*	урок 6 блок с людьми */
+	background-repeat: no-repeat;
+	background-position: 75px 53px;
+	position: relative;
+}
+
+
+#peopleImg {
+	height: 395px;
+	width: 402px;
+	outline: 1px solid #cccccc;
+	position: absolute;
+	right: 55px;
+	top: 1px;
+	background-image: url(images/people.jpg);
+	background-repeat: no-repeat;
+	z-index: 5; 					/*	убрать блок с боковыми линиями ниже блока с людьми */
+}
+
+
+#slogan {
+	width: 377px;  				/*	ширина блока */
+	height: 80px; 				/*	высота блока */
+	outline: 1px solid #cccccc; /*	задаём рамку */
+	position: absolute;
+	top: 190px;					/*	отступ всего блока по верху */
+	right: 637px;				/*	отступ всего блока по правому краю */
+	text-align: right;  		/*	позиционирование слогана по правому краю */
+	
+	
+}
+
+
+#slogan h2 {
+font: bold 23px Arial, sans-serif;  /*	 */
+color: #1d1e1b;						/*	задаём цвет текста  */
+text-transform: uppercase;			/* 	Так задаём все буквы в верхнем регистре  */
+margin-top: 3px;	/* 	РАССТОЯНИЯ МЕЖДУ  <div id="slogan"	<h2>Fusce a sapien ac justo</h2>	<p>Phasellus at elit velit, ac</p> */>
+		
+		
+}
+
+#slogan p {
+	font: 16px Arial, sans-serif;
+	color: #2c789c;
+	margin-top: -17px;	/* 	РАССТОЯНИЯ МЕЖДУ  <div id="slogan"	<h2>Fusce a sapien ac justo</h2>	<p>Phasellus at elit velit, ac</p> */>
+	}
+
+#forLine {
+	height: 96px;		/* 	высота боковых линий  */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	outline: 1px solid #cc0000;
+	width: 1024px;
+	background-image: url(images/forLineBg.png);
+	background-repeat: repeat-y;
+	z-index: 3;/*	поместить блок с боковыми линиями ниже блока с людьми */
+}
+
+/*	конец блока people */
+/*	начало цветного блока */
+
+#colors {								/* 	урок 8(линии по краям)  */
+	
+	/* height: 147px;						/* 	Это высота блока  */
+	outline: 1px solid  #cc0000;		/* 	Это его рамка  */
+	background-image: url(images/colorsBg.png);		/* 	Это его путь  */
+	background-repeat: repeat-y;					/* 	Это его тираж по оси Y  */
+	padding: 0 49px 0 42px;				/*  Это отступы  по краям 49 и 42px в области blue yellow green */
+	}
+
+
+#blue {							/* 	создаём ТРИ цветных блока (8 урок)  */
+	width: 292px;				
+	/* height: 147px;			/* 	Это высота уже с цветного (убрали все в 12 уроке)*/
+	float: left; 				/* 	чтобы они прижимались к левому краю и давали себя обтекать (без float цветные обьекты встают вниз!) */
+	background-color: #2C789C;	/* 	Это его цвет  */
+	padding-left: 14px;
+	background-repeat: no-repeat;
+	background-position: 250px 10px;		/* 	Вставляем и позиционируем картинки в цветные блоки  */
+	background-image: url(images/e1.png);
+}
+
+
+#yellow {
+	width: 302px;				/* 	Это его ширина  */
+		/*height: 147px;*/
+	float: left; 				/* 	чтобы они прижимались к левому краю и давали себя обтекать (без float цветные обьекты встают вниз!) */
+	background-color: #E5B00D;
+	padding-left: 19px;
+	background-repeat: no-repeat;
+	background-position: 267px 10px;			/* 	Вставляем и позиционируем картинки в цветные блоки  */
+	background-image: url(images/e2.png);
+}
+
+
+#green {
+	width: 282px;
+		/*height: 147px;	*/
+	float: left; 				/* 	чтобы они прижимались к левому краю и давали себя обтекать (без float цветные обьекты встают вниз!) */
+	background-color: #97BA15;
+	padding-left: 24px;
+	background-repeat: no-repeat;
+	background-position: 251px 10px;		/* 	Вставляем и позиционируем картинки в цветные блоки  */
+	background-image: url(images/e3.png);
+}
+
+
+#blue, #yellow, #green {			/* 	создаём правило для трех цветных блоков  10 урок*/
+	color: #ffffff;
+	padding-top: 13px;  			 	/* отступ сверху  */
+	position: relative;
+	}
+
+
+#colors h2 {
+	font: 19px Arial, sans-serif;
+	/*margin-top: 2px;			 229 строка	проблема решена с цветными блоками!!! осталось отрегулировать расстояния между P и H2 */
+	margin: 1px;
+	margin-bottom: 20px;			/* Тут еще не решено!!!  */
+}
+
+
+#colors p {
+	font: 16px Arial, sans-serif;
+	padding-bottom: 10px;
+	margin-bottom: -5px;	/*!!!БЫЛА ПРОБЛЕМА С ЦВЕТНЫМИ БЛОКАМИ!!! ВЫЕЗЖАЛИ ЦВЕТА ЗА БЛОК COLORS !!! тоже имеется в блоке  slogan текст далеко друг от друга*/
+}
+
+
+#colors a {
+	text-decoration: none;
+	color: #525252;
+	font: 16px Arial, sans-serif;
+	display: block;   			/* 	ссылка  */
+	width: 80px;
+	height: 26px;
+	background-image: url(images/readMore.png);  /* 	Урок 10 делаем в фотошопе контуры ссылки на цветных блоках  */
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 4px 10px;
+	margin-bottom: 4px;
+}
+
+.clear {				/* конец 10 урока */
+	clear: both;
+}
+
+
+#romb1 {
+	width: 24px;
+	height: 49px;			/* поставили треугольник синий 11 урок */
+	position: absolute;
+	background-image: url(images/e4.png);
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 49px;
+		}
+
+
+#romb2 {
+	width: 24px;
+	height: 49px;			/* поставили треугольник желтый 11 урок */
+	position: absolute;
+	background-image: url(images/e5.png);
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 49px;
+		}
+
+
+#green p, #green a {
+	margin-left: 6px;
+}
+
+
+#yellow a, #yellow p {
+	margin-left: 9px;
+}
+
+
+
+/* Конец цветного блока */
+/* Начало черно-белого */
+
+
+
+#BlackAndWhite {	
+	height: 225px;  /* Высота блока  изначально была задана 272 из этой суммы вычетаем 17 и 30 (См. padding!!!)*/
+	outline: 1px solid #cccccc;
+	background-image: url(images/colorsBg.png);		/* 	Это его путь  */
+	background-repeat: repeat-y;
+	position: relative;
+	padding: 17px 55px 30px 55px;		/* 	Это отступы текста наход. в блоке BlackAndWhite по краям!  */
+}
+
+#bLeft, #bRight {
+	
+	position: absolute;		/* "absolute" - картинка меняет своё положение в зависимости от наполнения данного блока контентом(текстом) */
+	width: 43px;		/* 	Пока не заданы размеры картинки она не появляется в браузере  */
+	height: 100px;
+}
+
+
+#bLeft {
+background-image: url(images/bLeft.png);		/* 	Это его путь  */
+background-repeat: no-repeat;
+bottom: 0px;		/* Указываем позицию */
+left: 0px;
+}
+
+
+#bRight {
+background-image: url(images/bRight.png);		/* 	Это его путь  */
+background-repeat: no-repeat;
+bottom: 0px;		/* Указываем позицию */
+right: 0px;
+z-index: 4;		/* добавили в Уроке 16 */
+}
+
+#bBottom {			/* Это полоса в нижней части блока #BlackAndWhite 13 урок*/
+	background-image: url(images/bBottom.png);		/* 	Это его путь  */
+	background-repeat: repeat-x;
+	bottom: 0px;
+	right: 35px;
+	width: 956px;
+	height: 1px;
+	position: absolute; /* "absolute" - картинка меняет своё положение в зависимости от наполнения данного блока контентом(текстом) */
+}
+
+
+#bContent {		/* 	Блок с текстом слева  14урок*/
+	height: 225px;
+	outline: 1px solid #cc0000;
+	width: 620px;
+	float: left; 		/* Тут будет два блока поэтому задаём left Чтобы этот блок прежимался к левому краю и давал себя обтекать тому контенту который будет справа!!!  */
+	
+}
+
+#bForm {		/* 	Блок с формой справа  14 урок*/
+	height: 225px;
+	outline: 1px solid #cc0000;
+	width: 264px;
+	float: left; 
+	margin-left: 30px;
+	position: relative;		/* 	добавили в Уроке 16  */
+	z-index: 5;			/* 	добавили в Уроке 16  */
+}
+
+#bContent h2, #bForm h2 {	/* 	В 16м Уроке добавляем #bForm h2*/
+	font: 24px Areal, sans-serif;
+	color: #000000;
+	margin-bottom: 6px;
+	margin-top: 0px;	/*	Добавил сам т.к. был большой отступ от блока  */
+}
+
+#bContent p.strong {
+	color: #1d1e1b;
+	font: bold 16px Areal, sans-serif;
+	margin-bottom: 20px;
+}
+
+#bContent p {
+	color: #7b7d78;
+	font: 16px Areal, sans-serif;
+	margin-bottom: 9px;
+}
+
+#bContent a {			/* 	Урок 15  Кнопка в нижней части блока */
+	text-decoration: none;
+	color: #b6b7b6;
+	font: 16px Arial, sans-serif;
+	display: block;   			/* 	ссылка  */
+	width: 80px;
+	height: 26px;
+	background-image: url(images/readMoreBlack.png);  /*  Урок 15  */
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 4px 10px;
+}
+
+
+#bForm input {		/* 	Урок 16  Прописываем правила для форм (3 поля)	*/
+	width: 248px;		/* 	По факту размер 262px но за счет padding-left: 15px; к ним добавляется 15px и все три формы выходят за блок!!! */
+	height: 31px;				/* Так же есть и др. проблемы! Это особенности браузеров которые надо учитывать!!! В 17 уроке раскрыта данная проблема */
+	border: 1px solid #dedede;
+	margin-bottom: 11px;
+	color: #bababa;						/* 	Так же есть и др. проблемы! См. урок 17!!!  */
+	font: 16px Arail, sans-serif;
+	padding-left: 15px;	
+	}
+
+#bForm input.button {	/*  Урок 16  Прописываем правила для кнопки  */
+	width: 99px;
+	height: 26px;
+	border: none;
+	padding: 28px 0 0 0;
+	margin: 0;
+	}
+				/*  Конец черно-белого блока  */
+				/* 	Начало темного блока!  */
+
+
+#dark {			/*  Урок 18   создали структуру основного блока #dark и в них структуру 3х блоков #planning, #team, #blog */
+
+	height: 430px;
+	padding: 13px 30px 14px 41px;	/*  padding задаём отступы по всем краям блока #dark!  */
+	outline: 1px solid #cc0000;
+	background-color: #1d1e1b;
+}
+
+#planning, #team, #blog {		/*  Урок 18  */
+	outline: 1px solid #cccccc;
+	height: 403px;
+	float: left;
+}
+
+#planning, #team {				/*  Урок 18  */
+	width: 289px;
+}
+
+#blog {							/*  Урок 18  */
+	width: 297px;
+}
+
+#team, #blog {					/*  Урок 18  */
+	margin-left: 39px;
+}
+
+
+#imgDark1 {
+
+	width: 289px;
+	height: 115px;
+	background-image: url(images/dark1.jpg); 
+	}
+
+	#imgDark2 {			/*  Урок 20 у блока div поменяется только фоновая картинка  */
+
+	width: 289px;
+	height: 115px;
+	background-image: url(images/dark2.jpg); 
+	}
+
+
+#dark h3 {		/*  В уроке № 20 добавляем #team h3 (групповой селлектор) на 5:50 убираем #planning и #team h3 и меняем на #dark h3*/
+
+	height: 22px;					/*  Высота блока  */
+	outline: 1px solid #cccccc;
+	font: 18px Arial, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;  
+	margin-top: 2px;		/*  проблема расстояний между строк Расстояние между черно-белым блоком стало 15px как в макете PSD!!! */
+	margin-bottom: 5px;		/*  проблема расстояний между строк !!! Расстояние между словом planning и картинкой стало 8px!*/
+}
+
+#planning p, #team p { 	/*  В уроке № 20 добавляем #team p (групповой селлектор) */
+
+	height: 172px;				/*  проблема расстояний между строк!!!  19 урок */
+	outline: 1px solid #cc0000;
+	font: 12px Arial, sans-serif;
+	color: #94998f;
+	padding-top: 2px;			 /*  проблема расстояний между строк!!!  */
+}
+
+#planning a, #team a {			/* 	Урок 15  Кнопка в нижней части блока. В уроке № 20 добавляем #team a (групповой селлектор) */
+	text-decoration: none;
+	color: #ffffff;
+	font: 16px Arial, sans-serif;
+	display: block;   			/* 	ссылка  */
+	width: 80px;
+	height: 26px;
+	background-image: url(images/readMoreBlue.png);  /*  Урок 15  */
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding: 4px 10px;
+}
+
+#post1, #post2 {					/* 	В 20 уроке создали 3 div   */					
+	height: 125px;
+	outline: 1px solid #cc0000;
+
+}
+
+#post3 {							/* 	В 20 уроке создали 3 div   */
+	height: 126px;
+	outline: 1px solid #cc0000;
+}
+
+
+#blogImg1 {
+	width: 111px;
+	height: 81px;
+	float: left;
+	background-image: url(images/dark3.jpg);
+	margin-right: 10px;  	/* 	 21 урок.   отступ текста откартинки на 10px   */
+}
+
+#blogImg2 {
+	width: 111px;
+	height: 81px;
+	float: left;
+	background-image: url(images/dark4.jpg);
+	margin-right: 10px;  	/* 	 21 урок.   отступ текста откартинки на 10px   */
+}
+
+#blogImg3 {
+	width: 111px;
+	height: 81px;
+	float: left;
+	background-image: url(images/dark5.jpg);
+	margin-right: 10px;  	/* 	 21 урок.   отступ текста откартинки на 10px   */
+}
+
+#blog h4 {
+	font: bolt 13px Arial, sans-serif;
+	color: #ffffff;
+}
+
+#blog p {
+	font: 12px Arial, sans-serif;
+	color: #94998f;
+	margin-top: -22px;				/* 	 РАССТОЯНИЯ МЕЖДУ   #blog h4 И  #blog p*/
+}
+
+#blog a {
+	font: 12px Arial, sans-serif;
+	color: #2c789c;
+	text-decoration: underline;
+	margin-top: 12px;
+
+}
+
+#blog h3 span {
+	color: #2c789c;
+	text-transform: lowercase; /* 	 21 урок. текст "atest posts" справа от заголовка. lowercase - нижний регистр  */
+	padding-left: 13px;
+}
+
+
+
+
+/*												Всё это делал сам, затем исправил через групповые селекторы !!!
+ #imgDark2 {
+
+width: 291px;
+	height: 116px;
+	background-image: url(images/dark2.jpg); 
+	}
+
+#dark h3 {
+	height: 27px;
+	outline: 1px solid, sans-serif;				Всё это делал сам, затем исправил через групповые селекторы !!!
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+#team h3 {
+
+height: 22px;
+	outline: 1px solid #cccccc;
+	font: 18px Arial, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;  
+	margin-top: 2px;		/*  проблема расстояний между строк Расстояние между черно-белым блоком стало 15px как в макете PSD!!! */
+	/*margin-bottom: 5px;
+}
+*/
+
+/*
+#team p{										Всё это делал сам, затем исправил через групповые селекторы !!!
+
+height: 172px;				
+	outline: 1px solid #cc0000;
+	font: 12px Arial, sans-serif;
+	color: #94998f;
+	padding-top: 2px;
+
+}
+
+#team a {			/* 	Урок 15  Кнопка в нижней части блока */
+
+	/*text-decoration: none;
+	color: #ffffff;								Всё это делал сам, затем исправил через групповые селекторы !!!
+	font: 16px Arial, sans-serif;
+	display: block;   			/* 	ссылка  */			
+	/*width: 80px;
+	height: 26px;
+	background-image: url(images/readMoreBlue.png);  /*  Урок 15  */
+	/*background-repeat: no-repeat;
+	/*cursor: pointer;
+	padding: 4px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						/* 	Конец 	темного 	блока!  */
+						/* 	Начало 	серого 	блока!  */
+
+
+#gray {			/* 	23 урок!  */	/* 	24 урок 4:10 вообще убираем фиксир. высоту у блока	#gray	#about	!  */
+	/* height: 168px;	*/				/* 	было 216 из этой суммы вычли 15px и 35px см. padding: 15px 30px 35px 40px;  */
+	outline: 1px solid #cc0000;
+	background-color: #2e302c;
+	padding: 15px 30px 35px 40px; 	/* 	Начало 	серого 	блока!  */
+}
+
+
+#about {
+
+width: 300px;
+/*height: 168px;	*/
+outline: 1px solid #cc0000;
+float: left;
+}
+
+
+#partners {
+
+width: 628px;
+height: 168px;
+outline: 1px solid #cc0000;
+float: left;
+margin-left: 26px; /* 	расстояние между блоками #about и #partners 30+40+300+628=998 вычитаем из этой суммы 1024px получаем 26*/
+}
+
+
+#gray h2 {
+	font: 18px Arial, sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 17px;			/* 	24 урок! добавляем нужные размеры к отступам!!!  */
+	margin-bottom: -11px;		/* 	24 урок! добавляем нужные размеры к отступам!!!  */
+}
+
+#gray p {
+	font: 12px Arial, sans-serif;
+	color: #94998f;  2c789c
+	}
+
+
+#gray a {
+	font: 16px Arial, sans-serif;
+	color: #2c789c;  
+	text-decoration: none;
+}
+
+
+.partners {				/* 	25 урок! Списки!  */
+	float: left;
+	outline: 1px solid #cc0000;
+}
+
+.partners li {
+	color: #94998f;
+	font: 12px Arial, sans-serif;
+	margin-bottom: 15px;
+	padding-left: 22px;		/* 	левый отступ  */
+	background-image: url(images/plus.png);  /*	так делаем каринку для фона (альтернатива для list-style: url(images/plus.png);)		*/
+	background-repeat: no-repeat;
+	/*list-style: url(images/plus.png);   так мы задаём картинку для списка*/
+	background-position: 0 4px;		/* 	позиционируем картинку с плюсом (images/plus.png) относительно текста справа	*/
+}
+
+#p2 {
+	margin-left: 38px;/* 	левый отступ от блока p1  */
+}
+
+#p1 {
+	/*margin-left: 22px; 	левый отступ   урок 26*/	
+}
+
+
+
+
+						/* 	Конец	 серого 	блока!  */
+						/* 	Начало 	нижней 	части 	(#footer)!  */
+
+
+#footer {			/* 	27 урок   */
+	height: 154px;
+	background-color: #131412;
+	outline: 1px solid #cc0000;
+	position: relative;
+}		
+
+#copy {
+	position: absolute;
+	top: 81px;
+	left: 39px;
+}
+
+#copy, #copy a {		/* 	27 урок ссылка Baxter © 2010 | Privacy Policy  */
+	font: 13px Arial, sans-serif;
+	color:  #9b9d99;
+	text-decoration: none;		/* 	Убрать черту под ссылкой  */
+}
+
+
+
+#footerNav {
+	width: 480px;				/* 	размер блока  */
+	height: 30px;				/* 	размер блока  */
+	outline: 1px solid #cccccc;
+	position: absolute;
+	top: 81px;
+	right: 36px;
+}
+				/* 	28 урок  */
+
+#footerNav li {
+	float: right;
+	outline: 0px solid #cc0000;
+	margin-left: 23px;
+	list-style: url(images/plus.png);
+}
+
+
+#footerNav li a {
+	text-decoration: none;
+	font: 13px Arial sans-serif;
+	color: #94998f;
+}
+
+
+#footerNav li a.active, #footerNav li a:hover {
+	color: #2c789c;
+}
+
+
+#footerSocial {			/* 	29 урок  */
+	width: 160px;
+	height: 21px;
+	position: absolute;
+	top: 111px;
+	right: 36px;
+	outline: 1px solid #c66666;
+}
+							/* 	29 урок  */
+#footerSocial li{
+float: right;
+margin-left: 5px;
+height: 21px;
+background-repeat: no-repeat;
+}
+								/* 	29 урок  */
+#s1 {
+width: 21px;
+background-image: url(images/s1.png);
+}
+								/* 	29 урок  */
+#s2 {
+width: 27px;
+background-image: url(images/s2.png);
+}
+
+#s3 {
+width: 22px;
+background-image: url(images/s3.png);
+}
+
+#s4 {							/* 	29 урок  */
+width: 62px;
+background-image: url(images/s4.png);
+}
+
+#footerSocial li a{				/* 	29 урок  */
+height: 21px;
+display: block;
+cursor: pointer;
+}

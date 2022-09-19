@@ -1,2 +1,2 @@
 # PSD layout
-___My practice after studying html and css.
+___My practice after studying <b>HTML</b> and <b>CSS</b>.
